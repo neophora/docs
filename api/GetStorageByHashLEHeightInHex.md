@@ -1,6 +1,6 @@
-# GetBlockByHashLEInJSON
+# GetStorageByHashHeightInHex
 
-get block by hash (little endian) in json
+get storage by hash (little endian) height in hex
 
 ## Input
 
@@ -8,6 +8,11 @@ get block by hash (little endian) in json
 {
     "type": "object",
     "properties": {
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
         "Hash": {
             "type": "string",
             "minLength": 64,
@@ -17,6 +22,7 @@ get block by hash (little endian) in json
         }
     },
     "required": [
+        "Height",
         "Hash"
     ],
     "additionalProperties": false
@@ -27,8 +33,9 @@ get block by hash (little endian) in json
 
 ```json
 {
-    "type": "object",
-    "description": "extraced block data"
+    "type": "string",
+    "pattern": "[0-9a-f]+",
+    "description": "binary storage data encoded in hex format"
 }
 ```
 

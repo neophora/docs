@@ -1,6 +1,6 @@
-# GetBlockByHashLEInJSON
+# GetHeaderByHashLEInJSON
 
-get block by hash (little endian) in json
+get header by hash (little endian) in json
 
 ## Input
 
@@ -28,7 +28,7 @@ get block by hash (little endian) in json
 ```json
 {
     "type": "object",
-    "description": "extraced block data"
+    "description": "extraced header data"
 }
 ```
 
