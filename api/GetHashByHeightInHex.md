@@ -4,7 +4,7 @@ get hash by height in hex
 
 ## Input
 
-``` json
+```json
 {
     "type": "object",
     "properties": {
@@ -23,7 +23,7 @@ get hash by height in hex
 
 ## Output
 
-``` json
+```json
 {
     "type": "string",
     "pattern": "[0-9a-f]+",
@@ -33,7 +33,7 @@ get hash by height in hex
 
 ## Examples
 
-``` sh
+```sh
 curl https://mainnet.neophora.io -d '{"id":1,"jsonrpc":"2.0","method":"GetHashByHeightInHex","params":{"Height":1}}'
 {"id":1,"result":"c96c94033911087c387cc77875869817c7617c000f4e39d7a0eeb0388adb82d7","error":null}
 ```

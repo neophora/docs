@@ -15,10 +15,10 @@ get contract by hash height in hex
         },
         "Hash": {
             "type": "string",
-            "minLength": 64,
-            "maxLength": 64,
-            "pattern": "[0-9a-f]{64}",
-            "description": "sha256^2 hash in big endian"
+            "minLength": 40,
+            "maxLength": 40,
+            "pattern": "[0-9a-f]{40}",
+            "description": "script hash in big endian"
         }
     },
     "required": [
