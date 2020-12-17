@@ -33,6 +33,6 @@ get block by hash in hex
 }
 ```
 
-## example
+## Examples
 
 TODO
