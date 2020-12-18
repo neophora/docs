@@ -1,4 +1,4 @@
-# GetRawTransactionByHashInJSON
+# GetTransactionByHashInJSON
 
 get raw transaction by hash in json
 

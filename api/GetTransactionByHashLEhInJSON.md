@@ -1,4 +1,4 @@
-# GetRawTransactionByHashLEInJSON
+# GetTransactionByHashLEInJSON
 
 get raw transaction by hash (little endian) in json
 
