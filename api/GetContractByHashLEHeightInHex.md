@@ -1,4 +1,4 @@
-# GetContractByHashHeightInHex
+# GetContractByHashLEHeightInHex
 
 get contract by hash (little endian) height in hex
 

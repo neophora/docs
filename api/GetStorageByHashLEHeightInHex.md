@@ -18,7 +18,7 @@ get storage by hash (little endian) height in hex
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "sha256^2 hash in little endian"
+            "description": "contract script hash (little endian) + storage key"
         }
     },
     "required": [
