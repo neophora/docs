@@ -1,6 +1,6 @@
 # GetTransactionByHashLEInJSON
 
-get raw transaction by hash (little endian) in json
+get transaction by hash (little endian) in json
 
 ## Input
 

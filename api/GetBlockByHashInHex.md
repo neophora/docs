@@ -1,6 +1,6 @@
 # GetBlockByHashInHex
 
-get block by hash in hex
+get block by hash (big endian) in hex
 
 ## Input
 

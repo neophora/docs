@@ -1,6 +1,6 @@
 # GetBlockByHashInJSON
 
-get block by hash in json
+get block by hash (big endian) in json
 
 ## Input
 

@@ -1,6 +1,6 @@
 # GetContractByHashHeightInHex
 
-get contract by hash height in hex
+get contract by hash height (big endian) in hex
 
 ## Input
 
