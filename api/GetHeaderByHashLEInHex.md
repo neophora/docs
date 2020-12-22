@@ -1,4 +1,4 @@
-# GetHeaderByHashInHex
+# GetHeaderByHashLEInHex
 
 get header by hash (little endian) in hex
 
