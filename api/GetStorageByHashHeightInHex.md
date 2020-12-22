@@ -1,6 +1,6 @@
 # GetStorageByHashHeightInHex
 
-get storage by hash height in hex
+get storage by hash (big endian) height in hex
 
 ## Input
 

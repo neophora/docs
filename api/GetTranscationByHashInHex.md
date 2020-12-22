@@ -1,6 +1,6 @@
 # GetTransactionByHashInHex
 
-get transaction by hash in hex
+get transaction by hash (big endian) in hex
 
 ## Input
 

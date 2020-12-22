@@ -1,6 +1,6 @@
 # GetHeaderByHashInHex
 
-get header by hash in hex
+get header by hash (big endian) in hex
 
 ## Input
 

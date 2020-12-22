@@ -1,6 +1,6 @@
 # GetHeaderByHashInJSON
 
-get header by hash in json
+get header by hash (big endian) in json
 
 ## Input
 

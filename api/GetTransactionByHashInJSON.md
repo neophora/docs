@@ -1,6 +1,6 @@
 # GetTransactionByHashInJSON
 
-get raw transaction by hash in json
+get transaction by hash (big endian) in json
 
 ## Input
 
