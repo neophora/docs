@@ -1,6 +1,6 @@
-# GetUTXOByHashLEInJSON
+# GetUTXOByHashIndexInJSON
 
-get utxo by hash (little endian) in json
+get utxo by hash (big endian) in json
 
 ## Input
 
@@ -13,7 +13,12 @@ get utxo by hash (little endian) in json
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "utxo hash in little endian"
+            "description": "transaction hash in big endian"
+        },
+        "Index": {
+            "type": "number",
+            "minimum": 0,
+            "description": "index in transaction"
         }
     },
     "required": [

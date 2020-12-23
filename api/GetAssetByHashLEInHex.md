@@ -1,4 +1,4 @@
-# GetAssetByHashInHex
+# GetAssetByHashLEInHex
 
 get asset by hash (little endian) in hex
 

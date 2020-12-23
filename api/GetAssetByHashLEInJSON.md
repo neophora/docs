@@ -1,4 +1,4 @@
-# GetAssetByHashInJSON
+# GetAssetByHashLEInJSON
 
 get asset by hash (little endian) in json
 

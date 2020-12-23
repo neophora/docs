@@ -1,4 +1,4 @@
-# GetUTXOByHashInHex
+# GetUTXOByHashIndexInHex
 
 get utxo by hash (big endian) in hex
 
@@ -13,7 +13,12 @@ get utxo by hash (big endian) in hex
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "utxo hash in big endian"
+            "description": "transaction hash in big endian"
+        },
+        "Index": {
+            "type": "number",
+            "minimum": 0,
+            "description": "index in transaction"
         }
     },
     "required": [
@@ -29,7 +34,7 @@ get utxo by hash (big endian) in hex
 {
     "type": "string",
     "pattern": "[0-9a-f]+",
-    "description": "output data encoded in hex format"
+    "description": "utxo data encoded in hex format"
 }
 ```
 
