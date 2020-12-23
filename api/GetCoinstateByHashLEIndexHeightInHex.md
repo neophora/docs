@@ -1,6 +1,6 @@
-# GetSpentNEOByHashLEIndexInJSON
+# GetCoinstateByHashLEIndexHeightInHex
 
-get spentneo by hash (little endian) in json
+get coinstate by hash (little endian) index height in hex
 
 ## Input
 
@@ -19,10 +19,17 @@ get spentneo by hash (little endian) in json
             "type": "number",
             "minimum": 0,
             "description": "index in transaction"
-        }
+        },
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
     },
     "required": [
-        "Hash"
+        "Hash",
+        "Height",
+        "Index"
     ],
     "additionalProperties": false
 }
@@ -32,8 +39,9 @@ get spentneo by hash (little endian) in json
 
 ```json
 {
-    "type": "object",
-    "description": "extraced spentneo data"
+    "type": "string",
+    "pattern": "[0-9a-f]+",
+    "description": "coinstate data encoded in hex format"
 }
 ```
 

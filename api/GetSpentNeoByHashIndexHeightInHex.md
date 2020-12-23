@@ -1,6 +1,6 @@
-# GetSpentNEOByHashIndexInHex
+# GetSpentNEOByHashIndexHeightInHex
 
-get spentneo by hash (big endian) in hex
+get spentneo by hash (big endian) index height in hex
 
 ## Input
 
@@ -19,10 +19,17 @@ get spentneo by hash (big endian) in hex
             "type": "number",
             "minimum": 0,
             "description": "index in transaction"
-        }
+        },
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
     },
     "required": [
-        "Hash"
+        "Hash",
+        "Height",
+        "Index"
     ],
     "additionalProperties": false
 }

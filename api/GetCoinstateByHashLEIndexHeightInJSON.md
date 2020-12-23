@@ -1,6 +1,6 @@
-# GetCoinstateByHashLEIndexInJSON
+# GetCoinstateByHashLEIndexHeightInJSON
 
-get coinstate by hash (little endian) in json
+get coinstate by hash (little endian) index height in json
 
 ## Input
 
@@ -19,10 +19,17 @@ get coinstate by hash (little endian) in json
             "type": "number",
             "minimum": 0,
             "description": "index in transaction"
-        }
+        },
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
     },
     "required": [
-        "Hash"
+        "Hash",
+        "Height",
+        "Index"
     ],
     "additionalProperties": false
 }

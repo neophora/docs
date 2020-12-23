@@ -1,6 +1,6 @@
-# GetCoinstateByHashLEIndexInHex
+# GetCoinstateByHashIndexHeightInHex
 
-get coinstate by hash (little endian) in hex
+get coinstate by hash (big endian) index height in hex
 
 ## Input
 
@@ -13,16 +13,23 @@ get coinstate by hash (little endian) in hex
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "transaction hash in little endian"
+            "description": "transaction hash in big endian"
         },
         "Index": {
             "type": "number",
             "minimum": 0,
             "description": "index in transaction"
-        }
+        },
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
     },
     "required": [
-        "Hash"
+        "Hash",
+        "Height",
+        "Index"
     ],
     "additionalProperties": false
 }

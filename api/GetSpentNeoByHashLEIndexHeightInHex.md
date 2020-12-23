@@ -1,6 +1,6 @@
-# GetSpentNEOByHashIndexInJSON
+# GetSpentNEOByHashLEIndexHeightInHex
 
-get spentneo by hash (big endian) in json
+get spentneo by hash (little endian) index height in hex
 
 ## Input
 
@@ -13,16 +13,23 @@ get spentneo by hash (big endian) in json
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "transaction hash in big endian"
+            "description": "transaction hash in little endian"
         },
         "Index": {
             "type": "number",
             "minimum": 0,
             "description": "index in transaction"
-        }
+        },
+        "Height": {
+            "type": "number",
+            "minumum": 0,
+            "description": "height"
+        },
     },
     "required": [
-        "Hash"
+        "Hash",
+        "Height",
+        "Index"
     ],
     "additionalProperties": false
 }
@@ -32,8 +39,9 @@ get spentneo by hash (big endian) in json
 
 ```json
 {
-    "type": "object",
-    "description": "extraced spentneo data"
+    "type": "string",
+    "pattern": "[0-9a-f]+",
+    "description": "spentneo data encoded in hex format"
 }
 ```
 
