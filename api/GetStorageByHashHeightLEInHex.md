@@ -1,4 +1,4 @@
-# GetStorageByHashHeightInHex
+# GetStorageByHashHeightLEInHex
 
 get storage by hash (little endian) height in hex
 
