@@ -11,12 +11,11 @@ get block by height in json
         "Height": {
             "type": "number",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         }
     },
-    "required": [
-        "Height"
-    ],
+    "required": [],
     "additionalProperties": false
 }
 ```

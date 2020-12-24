@@ -18,18 +18,18 @@ get spentneo by hash (big endian) index height in hex
         "Index": {
             "type": "number",
             "minimum": 0,
+            "default": 0,
             "description": "index in transaction"
         },
         "Height": {
             "type": "number",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         },
     },
     "required": [
-        "Hash",
-        "Height",
-        "Index"
+        "Hash"
     ],
     "additionalProperties": false
 }

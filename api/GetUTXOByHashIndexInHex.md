@@ -16,9 +16,10 @@ get utxo by hash (big endian) in hex
             "description": "transaction hash in big endian"
         },
         "Index": {
-            "type": "number",
+            "type": "integer",
             "minimum": 0,
-            "description": "index in transaction"
+            "default": 0,
+            "description": "output index in transaction"
         }
     },
     "required": [

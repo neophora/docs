@@ -16,9 +16,10 @@ get utxo by hash (little endian) in hex
             "description": "transaction hash in little endian"
         },
         "Index": {
-            "type": "number",
+            "type": "integer",
             "minimum": 0,
-            "description": "index in transaction"
+            "default": 0,
+            "description": "output index in transaction"
         }
     },
     "required": [

@@ -11,6 +11,7 @@ get contract by hash (big endian) height in hex
         "Height": {
             "type": "number",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         },
         "Hash": {
@@ -22,7 +23,6 @@ get contract by hash (big endian) height in hex
         }
     },
     "required": [
-        "Height",
         "Hash"
     ],
     "additionalProperties": false

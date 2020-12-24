@@ -11,12 +11,11 @@ get hash by height in hex
         "Height": {
             "type": "number",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         }
     },
-    "required": [
-        "Height"
-    ],
+    "required": [],
     "additionalProperties": false
 }
 ```

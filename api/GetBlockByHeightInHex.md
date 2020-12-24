@@ -9,14 +9,13 @@ get block by height in hex
     "type": "object",
     "properties": {
         "Height": {
-            "type": "number",
+            "type": "integer",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         }
     },
-    "required": [
-        "Height"
-    ],
+    "required": [],
     "additionalProperties": false
 }
 ```

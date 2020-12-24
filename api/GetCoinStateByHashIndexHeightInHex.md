@@ -1,6 +1,6 @@
-# GetCoinstateByHashLEIndexHeightInJSON
+# GetCoinStateByHashIndexHeightInHex
 
-get coinstate by hash (little endian) index height in json
+get coinstate by hash (big endian) index height in hex
 
 ## Input
 
@@ -13,23 +13,23 @@ get coinstate by hash (little endian) index height in json
             "minLength": 64,
             "maxLength": 64,
             "pattern": "[0-9a-f]{64}",
-            "description": "transaction hash in little endian"
+            "description": "transaction hash in big endian"
         },
         "Index": {
-            "type": "number",
+            "type": "integer",
             "minimum": 0,
-            "description": "index in transaction"
+            "default": 0,
+            "description": "output index in transaction"
         },
         "Height": {
-            "type": "number",
+            "type": "integer",
             "minumum": 0,
+            "default": 0,
             "description": "height"
         },
     },
     "required": [
-        "Hash",
-        "Height",
-        "Index"
+        "Hash"
     ],
     "additionalProperties": false
 }
@@ -39,8 +39,9 @@ get coinstate by hash (little endian) index height in json
 
 ```json
 {
-    "type": "object",
-    "description": "extraced coinstate data"
+    "type": "string",
+    "pattern": "[0-9a-f]+",
+    "description": "coinstate data encoded in hex format"
 }
 ```
 
