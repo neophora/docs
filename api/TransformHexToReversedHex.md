@@ -1,4 +1,4 @@
-# GetHeaderByBlockHashInHex
+# TransformHexToReversedHex
 
 as an example:
 
@@ -13,17 +13,13 @@ TODO
 {
     "additionalProperties": false,
     "properties": {
-        "BlockHash": {
-            "description": "block hash in big endian",
-            "maxLength": 64,
-            "minLength": 64,
-            "pattern": "^[0-9a-f]{64}$",
+        "Hex": {
+            "description": "hex data",
+            "pattern": "^([0-9a-f]{2})*$",
             "type": "string"
         }
     },
-    "required": [
-        "BlockHash"
-    ],
+    "required": [],
     "type": "object"
 }
 ```

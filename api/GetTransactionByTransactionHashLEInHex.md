@@ -17,7 +17,7 @@ TODO
             "description": "transaction hash in little endian",
             "maxLength": 64,
             "minLength": 64,
-            "pattern": "[0-9a-f]{64}",
+            "pattern": "^[0-9a-f]{64}$",
             "type": "string"
         }
     },

@@ -17,12 +17,12 @@ TODO
             "description": "contract hash in big endian",
             "maxLength": 40,
             "minLength": 40,
-            "pattern": "[0-9a-f]{40}",
+            "pattern": "^[0-9a-f]{40}$",
             "type": "string"
         },
         "HexKey": {
             "description": "hex encoded key",
-            "pattern": "[0-9a-f]*",
+            "pattern": "^([0-9a-f]{2})*$",
             "type": "string"
         }
     },
