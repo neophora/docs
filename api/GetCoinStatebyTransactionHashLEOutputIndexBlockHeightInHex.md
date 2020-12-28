@@ -1,4 +1,4 @@
-# GetCoinstatebyTransactionHashLEOutputIndexBlockHeightInHex
+# GetCoinStatebyTransactionHashLEOutputIndexBlockHeightInHex
 
 as an example:
 
